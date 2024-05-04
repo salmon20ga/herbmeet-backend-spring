@@ -1,0 +1,16 @@
+# JPA
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://hubmeet.cbg0cw0ck2cq.ap-northeast-2.rds.amazonaws.com:3306/hubmeet?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: admin
+    password: hubmeet12
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
